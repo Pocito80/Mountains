@@ -1,0 +1,303 @@
+html{
+    overflow: auto;
+    /* background-image: url(./assets/backroundv2.jpg); */
+
+}
+.bg{
+    background-image: url(./assets/backroundv2.jpg);
+}
+.navbar{
+    display: flex;
+    position: sticky;
+    top: 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: black;
+
+    height: 5vh;
+}
+.navbar a{
+    font-size: small;
+    padding: 14px 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.navbar a:not(.img)::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid gold;
+    border-left: 2px solid gold;
+    transition: 0.5s;
+}
+.navbar a:not(.img):after{
+    content: " ";
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid gold;
+    border-right: 2px solid gold;
+    transition: 0.5s;
+}
+.navbar a:hover{
+    background-color: none;
+    
+}
+.navbar a:hover::before, .navbar a:hover::after{
+    width: 98%;
+    height: 93%;
+    transition-delay: 0s;
+}
+.navbar a:not(.img):hover{
+    background-color: gold;
+    color: #000 !important;
+    box-shadow: 0 0 20px gold;
+    transition-delay: 0.5s;
+    background-size: cover;
+}
+.navbar > a:hover{
+    background-color: transparent;
+}
+.navbar a:last-child{
+    margin-right: auto;
+}
+.a2{
+    margin-left: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container{
+    color: #fff !important;
+     
+}
+
+
+
+.mountains{
+    position: relative;
+    width: 320px;
+    margin: 100px auto 100px auto;
+    perspective: 1000px;
+    height: 300px;
+    padding-top: 40px;
+}
+.carousel{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 60s infinite forwards linear;
+}
+.carousel .image{
+    position: absolute;
+    width: 300px;
+    height: 187px;
+    top: 20px;
+    left: 10px;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+    display: flex;
+}
+.carousel span {
+     margin: auto;
+     font-size: 32px;
+     color: #fff;
+}
+@keyframes rotate360 {
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(-360deg);
+    }
+}
+.carousel .image:nth-child(1){
+    background-image: url("./assets/5.jpeg");
+    transform: rotateY(0deg) translateZ(430px);
+    border-radius: 40px;
+}
+.carousel .image:nth-child(2){
+    background-image: url("./assets/k2.jpeg");
+    transform: rotateY(40deg) translateZ(430px);
+    border-radius: 40px;
+}
+.carousel .image:nth-child(3){
+    background-image: url("./assets/3.jpeg");
+    transform: rotateY(80deg) translateZ(430px);
+    border-radius: 40px;
+}
+.carousel .image:nth-child(4){
+    background-image: url("./assets/4.jpg");
+    transform: rotateY(120deg) translateZ(430px);
+    border-radius: 40px;
+}
+.carousel .image:nth-child(5){
+    background-image: url("./assets/5.jpeg");
+    transform: rotateY(160deg) translateZ(430px);
+    border-radius: 40px;
+}
+.carousel .image:nth-child(6){
+    background-image: url("./assets/6.jpeg");
+    transform: rotateY(200deg) translateZ(430px);
+    border-radius: 40px;
+}
+.carousel .image:nth-child(7){
+    background-image: url("./assets/7.jpg");
+    transform: rotateY(240deg) translateZ(430px);
+    border-radius: 40px;
+}
+.carousel .image:nth-child(8){
+    background-image: url("./assets/8.jpg");
+    transform: rotateY(280deg) translateZ(430px);
+    border-radius: 40px;
+}
+.carousel .image:nth-child(9){
+    background-image: url("./assets/9.jpg");
+    transform: rotateY(320deg) translateZ(430px);
+    border-radius: 40px;
+}
+.footer{
+    z-index: 100;
+    background-color: black;
+    color: #fff;
+    padding-bottom: 20px
+}
+
+
+.swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      
+      .swiper {
+        width: 100%;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .swiper-slide {
+        background-size: cover;
+        background-position: center;
+      }
+
+      .mySwiper2 {
+        height: 80%;
+        width: 100%;
+      }
+
+      .mySwiper {
+        height: 20%;
+        box-sizing: border-box;
+        padding: 10px 0;
+      }
+
+      .mySwiper .swiper-slide {
+        width: 25%;
+        height: 100%;
+        opacity: 0.4;
+      }
+
+      .mySwiper .swiper-slide-thumb-active {
+        opacity: 1;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .swiper-text {
+       position: absolute;
+       height: 100%;
+       width: 100%;
+       color: #fff;
+       background-color:rgba(0, 0, 0, 0.5);
+       
+
+      }
+      .swiper-text p{
+        position: absolute;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: bold;
+        color: #fff;
+    
+        text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+      
+ 
+       }
+      .swiper-info {
+        position: absolute;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+     
+        color: #fff;
+    
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+        background-color:rgba(0, 0, 0, 0.5);
+        
+ 
+       }
+       .home-text
+       {
+        color: #000;
+       }
+       
+       .foto-about
+       {
+        border-radius: 20%;
+       }
